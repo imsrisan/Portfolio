@@ -1,0 +1,84 @@
+.container{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 80vh;
+    grid-template-areas: "left right";
+}
+
+.left{
+    grid-area: left;
+    /* background-color: #002349; */
+    background-color:  #49c5b6;
+}
+
+.right{
+    grid-area: right;
+}
+
+/* styles for profile card */
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.profile-card{
+    width: 350px;
+    height: 450px;
+    background-color: #2B7A78;
+    border-radius: 5px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(30%);
+    display: grid;
+    grid-template-rows: 88% 12%;
+    grid-template-areas: "top"
+    "bottom";
+
+}
+
+.top{
+    grid-area: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#my-profile img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+.top .name{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    width: 160px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #17252A;
+}
+
+.top hr{
+    width: 20%;
+    font-weight: 900;
+    height: 1px;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.top #role{
+    font-size: 24px;
+}
+
+.bottom{
+    grid-area: bottom;
+    background-color: #FEFFFF;
+}
+

@@ -1,0 +1,211 @@
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 80vh auto;
+    grid-template-areas: "header"
+    "main-content"
+    "projects";
+}
+
+.header{
+    grid-area: header;
+    /* background-color: #3AAFA9; */
+    background-color:  #49c5b6;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100%;
+    grid-template-areas: "lc1 nc2 sc3";
+}
+
+
+/* Top Header bar css */
+
+.logo{
+    grid-area: lc1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #17252A;
+    font-weight: 700;
+}
+
+
+/* navigation styles */
+
+.navigation{
+    grid-area: nc2;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation div{
+    margin: 10px;
+}
+
+.navigation a{
+    width: 100px;
+    padding: 5px;
+    font-size: 0.9rem;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* social-media styles */
+
+.social-media{
+    grid-area: sc3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media i{
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+
+.social-media i:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+.main-content{
+    grid-area: main-content;
+}
+
+/* style for image */
+
+
+
+
+
+/* projects */
+
+.projects{
+    grid-area: projects;
+    /* background-color: #002349; */
+    /* background-color: #3AAFA9; */
+    background-color:  #49c5b6;
+
+}
+/* 
+#project-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+} */
+
+.intro{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+span{
+    font-weight: bold;
+    color: white;
+}
+
+span::before,
+span::after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+span::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+span::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.project-card{
+    width: 290px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.project-title{
+    margin: 10px 0px 10px 0px;
+}
+
+img{
+    width: 290px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.project-works{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 50px 50px 50px;
+    /* gap: 50px; */
+}
+
+.project-card .top p{
+    text-align: center;
+}
+
+
+
+
+h4{
+    margin: 10px 0px 10px;   
+}
+
+.short-description{
+    margin: 0;
+    font-size: 12px;
+}
+
+.project-card a{
+    margin: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+}
+
+.project-card a:hover{
+    background-color: black;
+    color: white;
+}
+
